@@ -1,18 +1,23 @@
-## Getting Started
+# 📺 Simulador de Smart TV - Terminal Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto simula uma **Smart TV controlada via terminal**, com funcionalidades básicas como ligar/desligar, alterar canal e volume. Foi desenvolvido em Java como parte dos meus estudos sobre orientação a objetos.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 📌 Funcionalidades
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Ligar e desligar a TV
+- Mudar para um canal específico
+- Aumentar ou diminuir o canal
+- Definir um volume específico
+- Aumentar ou diminuir o volume
+- Exibir status atual da TV (ligada/desligada, canal, volume)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🚀 Como executar
 
-## Dependency Management
+1. Clone o repositório:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```bash
+git clone https://github.com/daniestebanvr/dio-java-basico.git
