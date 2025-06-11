@@ -20,4 +20,4 @@ Este é um projeto simples desenvolvido em Java para simular a criação de uma 
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
+git clone https://github.com/daniestebanvr/dio-java-basico/conta-banco.git
