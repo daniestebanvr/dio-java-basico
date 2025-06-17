@@ -1,18 +1,37 @@
-## Getting Started
+# 🔢 Contador Interativo em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+> Projeto simples de contagem com validação de entrada, usando `Scanner`, `try-catch` e lógica condicional.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 📘 Descrição
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Este projeto consiste em um programa de console Java que solicita dois números inteiros positivos ao usuário. Ele realiza uma validação completa das entradas e, em seguida, exibe uma contagem de quantas iterações seriam realizadas entre esses dois números.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+O objetivo principal é exercitar:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- Entrada de dados com `Scanner`
+- Tratamento de exceções com `try-catch`
+- Lógica condicional (`if`, `else if`)
+- Estrutura de repetição com `for`
+- Manipulação de arrays
 
-## Dependency Management
+---
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🚀 Funcionalidades
+
+- Solicita dois números inteiros do usuário.
+- Verifica se os números são positivos.
+- Garante que o primeiro número seja menor que o segundo.
+- Em caso de erro de digitação (ex: letras), trata com `InputMismatchException`.
+- Exibe quantas iterações serão feitas.
+- Imprime a sequência da contagem com mensagens personalizadas.
+
+---
+
+## 🧠 Lógica de Contagem
+
+A lógica central está no método `contar(int numero1, int numero2)`:
+
+```java
+int quantidadeIteracoes = numero2 - numero1;
