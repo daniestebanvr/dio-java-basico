@@ -1,16 +1,23 @@
+package MeuBanco;
+
 public abstract class ContaBanco implements IContaBanco {
+    protected String nomeBanco;
+    protected String nomeCliente;
     protected int agencia;
     protected int numeroConta;
     protected double saldoDisponivel;
 
-    private static final int AGENCIA_PADRAO = 1;
     private static int SEQUENCIAL = 0;
 
-    public ContaBanco() {
-        this.agencia = AGENCIA_PADRAO;
+    //Método construtuor
+    public ContaBanco(String nomeBanco, String nomeCliente, int numeroAgencia) {
+        this.nomeBanco = nomeBanco;
+        this.nomeCliente = nomeCliente;
+        this.agencia = numeroAgencia;
         this.numeroConta = SEQUENCIAL++;
     }
 
+    //Métodos
     public void sacar(double valor) {
         this.saldoDisponivel -= valor;
     }
@@ -22,6 +29,16 @@ public abstract class ContaBanco implements IContaBanco {
     public void transferir(double valor, ContaBanco contaDestino) {
         this.sacar(valor);
         contaDestino.depositar(valor);
+    }
+
+    //Encapsulamento
+
+    public String getNomeBanco() {
+        return nomeBanco;
+    }
+
+    public void setNomeBanco(String nomeBanco) {
+        this.nomeBanco = nomeBanco;
     }
 
     public int getAgencia() {
