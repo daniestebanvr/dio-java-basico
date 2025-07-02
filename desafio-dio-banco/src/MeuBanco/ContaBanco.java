@@ -53,10 +53,12 @@ public abstract class ContaBanco implements IContaBanco {
         return saldoDisponivel;
     }
 
-    protected void imprimirDadosComuns(){
+    public void imprimirDadosComuns(){
+        System.out.println(String.format("Banco: %s", this.nomeBanco));
+        System.out.println(String.format("Cliente: %s", this.nomeCliente));
         System.out.println(String.format("Agência: %d", this.agencia));
         System.out.println(String.format("Número: %d", this.numeroConta));
-        System.out.println(String.format("Saldo: %.2f", this.saldoDisponivel));
+        System.out.println(String.format("Saldo: %.2f\n", this.saldoDisponivel));
     }
 
     protected abstract void imprimirExtrato();
